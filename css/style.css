@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+}
+
+/* Hero avec montagne stylisée */
+.hero-section {
+  position: relative;
+  background: linear-gradient(to bottom, #0f172a 0%, #1e3a2f 100%);
+  overflow: hidden;
+}
+
+/* Lignes de terrain subtiles (football/tennis) */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+      90deg,
+      transparent 49.5%,
+      rgba(255, 255, 255, 0.05) 49.5%,
+      rgba(255, 255, 255, 0.05) 50.5%,
+      transparent 50.5%
+    ),
+    linear-gradient(0deg, transparent 0%, rgba(255, 255, 255, 0.02) 100%);
+  pointer-events: none;
+}
+
+/* Montagne en bas */
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(135deg, #1e3a2f 0%, #2d5016 50%, #1a2810 100%);
+  clip-path: polygon(
+    0 100%,
+    0 75%,
+    10% 70%,
+    20% 55%,
+    30% 65%,
+    40% 50%,
+    50% 40%,
+    60% 55%,
+    70% 45%,
+    80% 60%,
+    90% 50%,
+    100% 65%,
+    100% 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Graph lines subtiles (investissement) */
+.graph-overlay {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 200px;
+  height: 120px;
+  opacity: 0.15;
+  z-index: 2;
+}
+
+.graph-line {
+  stroke: #10b981;
+  stroke-width: 2;
+  fill: none;
+  animation: drawLine 3s ease-in-out infinite;
+}
+
+@keyframes drawLine {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.mountain-logo {
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  position: relative;
+}
+
+.mountain-logo::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid #10b981;
+}
+
+.mountain-logo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 15px solid #059669;
+}
+
+/* Cards avec inspiration multi-sport */
+.activity-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.activity-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(16, 185, 129, 0.1) 0%,
+    transparent 70%
+  );
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.activity-card:hover::before {
+  opacity: 1;
+  transform: translate(25%, 25%);
+}
+
+.activity-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+}
+
+/* Section avec pattern subtil */
+.pattern-section {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  position: relative;
+}
+
+.pattern-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 35px,
+    rgba(16, 185, 129, 0.03) 35px,
+    rgba(16, 185, 129, 0.03) 70px
+  );
+  pointer-events: none;
+}
+
+/* Stats style investissement */
+.stat-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  transform: scale(1.05);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #10b981, #059669);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.project-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #10b981;
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
+}
+
+.skill-badge {
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.8) 0%,
+    rgba(5, 150, 105, 0.8) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Tennis ball subtle animation */
+.tennis-ball {
+  width: 8px;
+  height: 8px;
+  background: #fbbf24;
+  border-radius: 50%;
+  position: absolute;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* Icon containers */
+.passion-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.passion-icon:hover {
+  transform: scale(1.2) rotate(5deg);
+}

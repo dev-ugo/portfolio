@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur Junior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-900/95 backdrop-blur-md shadow-lg z-50 border-b border-emerald-500/20">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="mountain-logo mb-1"></div>
+                    <span class="text-xl font-bold text-white">Ugo Preiswerk</span>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="#accueil" class="nav-link text-gray-300 hover:text-white">Accueil</a>
+                    <a href="#apropos" class="nav-link text-gray-300 hover:text-white">À propos</a>
+                    <a href="#projets" class="nav-link text-gray-300 hover:text-white">Projets</a>
+                    <a href="#valeurs" class="nav-link text-gray-300 hover:text-white">Mes valeurs</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-section min-h-screen flex items-center justify-center pt-20">
+        <!-- Graph subtle -->
+        <svg class="graph-overlay" viewBox="0 0 200 120">
+            <path class="graph-line" d="M 0 100 L 40 80 L 80 85 L 120 60 L 160 65 L 200 40" />
+        </svg>
+        
+        <!-- Tennis ball decoratif -->
+        <div class="tennis-ball" style="top: 25%; left: 15%;"></div>
+        <div class="tennis-ball" style="top: 35%; right: 20%; animation-delay: 1s;"></div>
+
+        <div class="hero-content max-w-4xl mx-auto px-6 text-center">
+            <div class="float-animation mb-6">
+                <div class="flex justify-center space-x-4 text-5xl mb-4">
+                    <span class="passion-icon">⛰️</span>
+                    <span class="passion-icon">⚽</span>
+                    <span class="passion-icon">🎾</span>
+                    <span class="passion-icon">📈</span>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">Développeur Junior</h1>
+            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto drop-shadow">
+                Stratégie, persévérance et performance : du terrain au code
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projets" class="bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg">
+                    Découvrir mes projets
+                </a>
+                <a href="#contact" class="border-2 border-emerald-500 hover:bg-emerald-500 hover:text-white text-emerald-400 px-8 py-3 rounded-lg font-semibold transition">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section avec stats -->
+    <section id="apropos" class="py-20 pattern-section">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Mon Parcours</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-emerald-500 to-emerald-600 mx-auto"></div>
+            </div>
+
+            <!-- Stats inspirées investissement -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="stat-card p-6 rounded-lg text-center">
+                    <div class="text-3xl font-bold text-emerald-400 mb-2">100+</div>
+                    <div class="text-sm text-gray-400">Heures de code</div>
+                </div>
+                <div class="stat-card p-6 rounded-lg text-center">
+                    <div class="text-3xl font-bold text-emerald-400 mb-2">15+</div>
+                    <div class="text-sm text-gray-400">Projets réalisés</div>
+                </div>
+                <div class="stat-card p-6 rounded-lg text-center">
+                    <div class="text-3xl font-bold text-emerald-400 mb-2">5</div>
+                    <div class="text-sm text-gray-400">Technologies maîtrisées</div>
+                </div>
+                <div class="stat-card p-6 rounded-lg text-center">
+                    <div class="text-3xl font-bold text-emerald-400 mb-2">∞</div>
+                    <div class="text-sm text-gray-400">Motivation</div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-gray-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Qui suis-je ?</h3>
+                    <p class="mb-4">
+                        Développeur junior passionné qui applique au code les leçons apprises sur le terrain et en montagne. 
+                        Chaque projet est une stratégie à déployer, chaque bug un défi à surmonter.
+                    </p>
+                    <p class="mb-4">
+                        <strong class="text-emerald-400">🏔️ De la montagne :</strong> la patience, la persévérance et le respect du processus. 
+                        On n'atteint pas le sommet en un jour.
+                    </p>
+                    <p class="mb-4">
+                        <strong class="text-emerald-400">⚽🎾 Du sport :</strong> l'esprit d'équipe, la discipline et l'importance de la stratégie. 
+                        Savoir quand attaquer, quand défendre.
+                    </p>
+                    <p>
+                        <strong class="text-emerald-400">📈 De l'investissement :</strong> la vision long terme, l'analyse et la prise de décision réfléchie. 
+                        Investir son temps dans les bonnes technologies.
+                    </p>
+                </div>
+                <div class="bg-slate-800/50 p-8 rounded-lg border border-emerald-500/20">
+                    <h4 class="font-semibold text-lg mb-4 text-white">Stack Technique</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center">
+                            <span class="text-emerald-400 mr-2">▶</span>
+                            Frontend : HTML, CSS, Tailwind, JavaScript
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-emerald-400 mr-2">▶</span>
+                            Backend : PHP, MySQL, Laravel, Node.js
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-emerald-400 mr-2">▶</span>
+                            Outils : Git, GitHub, VS Code, Trello
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-emerald-400 mr-2">▶</span>
+                            DevOps : Docker, CI/CD (GitHub Actions)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="py-20 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Réalisations</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-emerald-500 to-emerald-600 mx-auto"></div>
+                <p class="text-gray-400 mt-4">Stratégie, exécution, résultats</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-emerald-900 to-slate-800 flex items-center justify-center">
+                        <div class="text-6xl">🌤️</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Application Météo</h3>
+                        <p class="text-gray-400 mb-4">
+                            Prévisions météo en temps réel avec géolocalisation. Parfait pour planifier mes randonnées.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-badge text-white px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="skill-badge text-white px-3 py-1 rounded-full text-sm">API</span>
+                            <span class="skill-badge text-white px-3 py-1 rounded-full text-sm">Tailwind</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium">Code →</a>
+                            <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium">Demo →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-900 to-slate-800 flex items-center justify-center">
+                        <div class="text-6xl">📊</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Tracker Finances</h3>
+                        <p class="text-gray-400 mb-4">
+                            Dashboard pour suivre revenus, dépenses et investissements. Visualisation claire des données.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-badge text-white px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="skill-badge text-white px-3 py-1 rounded-full text-sm">Chart.js</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium">Code →</a>
+                            <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium">Demo →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-900 to-slate-800 flex items-center justify-center">
+                        <div class="text-6xl">⚽</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Score Tracker Sport</h3>
+                        <p class="text-gray-400 mb-4">
+                            Application pour suivre les scores et statistiques de mes matchs de foot et tennis.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="skill-badge text-white px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="skill-badge text-white px-3 py-1 rounded-full text-sm">CSS</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium">Code →</a>
+                            <a href="#" class="text-emerald-400 hover:text-emerald-300 font-medium">Demo →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section - Métaphores des passions -->
+    <section id="valeurs" class="py-20 pattern-section">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Mes Valeurs</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-emerald-500 to-emerald-600 mx-auto"></div>
+                <p class="text-gray-400 mt-4">Ce qui me définit, du terrain au code</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Mountain Value -->
+                <div class="activity-card bg-slate-800/50 p-6 rounded-lg border border-emerald-500/20 text-center">
+                    <div class="text-5xl mb-4">⛰️</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Persévérance</h3>
+                    <p class="text-gray-400 text-sm">
+                        Comme en montagne, j'avance pas à pas vers mes objectifs. Les obstacles sont des défis à surmonter.
+                    </p>
+                </div>
+
+                <!-- Football Value -->
+                <div class="activity-card bg-slate-800/50 p-6 rounded-lg border border-emerald-500/20 text-center">
+                    <div class="text-5xl mb-4">⚽</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Esprit d'équipe</h3>
+                    <p class="text-gray-400 text-sm">
+                        Le collectif prime. Un bon code est celui qu'on peut partager et améliorer ensemble.
+                    </p>
+                </div>
+
+                <!-- Tennis Value -->
+                <div class="activity-card bg-slate-800/50 p-6 rounded-lg border border-emerald-500/20 text-center">
+                    <div class="text-5xl mb-4">🎾</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Stratégie</h3>
+                    <p class="text-gray-400 text-sm">
+                        Anticiper, adapter sa tactique. Chaque projet demande une approche réfléchie et ciblée.
+                    </p>
+                </div>
+
+                <!-- Investment Value -->
+                <div class="activity-card bg-slate-800/50 p-6 rounded-lg border border-emerald-500/20 text-center">
+                    <div class="text-5xl mb-4">📈</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Vision long terme</h3>
+                    <p class="text-gray-400 text-sm">
+                        Investir dans les bonnes compétences aujourd'hui pour bâtir demain. Croissance continue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">Prêt à Collaborer ?</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-emerald-500 to-emerald-600 mx-auto"></div>
+                <p class="text-gray-400 mt-4">Discutons de votre prochain projet</p>
+            </div>
+            <div class="bg-slate-800/50 rounded-lg shadow-2xl p-8 md:p-12 border border-emerald-500/20">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-white">Contact</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">📧</span>
+                                <div>
+                                    <p class="font-medium text-gray-300">Email</p>
+                                    <a href="mailto:votre.email@exemple.com" class="text-emerald-400 hover:text-emerald-300">votre.email@exemple.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">💼</span>
+                                <div>
+                                    <p class="font-medium text-gray-300">LinkedIn</p>
+                                    <a href="#" class="text-emerald-400 hover:text-emerald-300">linkedin.com/in/votre-profil</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">🐙</span>
+                                <div>
+                                    <p class="font-medium text-gray-300">GitHub</p>
+                                    <a href="#" class="text-emerald-400 hover:text-emerald-300">github.com/votre-username</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-2xl mr-4">📍</span>
+                                <div>
+                                    <p class="font-medium text-gray-300">Localisation</p>
+                                    <p class="text-gray-400">Genève, Suisse</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-white">Message rapide</h3>
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Votre nom" class="w-full px-4 py-3 bg-slate-900 border border-emerald-500/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-white placeholder-gray-500">
+                            <input type="email" placeholder="Votre email" class="w-full px-4 py-3 bg-slate-900 border border-emerald-500/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-white placeholder-gray-500">
+                            <textarea placeholder="Votre message" rows="4" class="w-full px-4 py-3 bg-slate-900 border border-emerald-500/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-white placeholder-gray-500"></textarea>
+                            <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white py-3 rounded-lg font-semibold transition shadow-lg">
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white py-8 border-t border-emerald-500/20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-4 text-2xl mb-4">
+                <span>⛰️</span>
+                <span>⚽</span>
+                <span>🎾</span>
+                <span>📈</span>
+            </div>
+            <p class="text-gray-400">© 2025 - Tous droits réservés</p>
+            <p class="text-gray-500 text-sm mt-2">Du terrain au code, avec passion 🚀</p>
+        </div>
+    </footer>
