@@ -1,0 +1,27 @@
+name: Validate and Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Validate HTML
+        run: |
+          npm install -g html-validate
+          html-validate *.html || echo "HTML validation warnings"
+      
+      - name: Deploy to Netlify
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: |
+          curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
+          echo "✅ Déploiement déclenché sur Netlify"
