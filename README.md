@@ -32,17 +32,15 @@ Portfolio développé pour mettre en avant mon parcours de développeur junior. 
 
 ## 📤 Déploiement
 
-Le site est déployé sur : _[À compléter]_
+Le site est déployé sur : Netlify
 
-**Options de déploiement possibles :**
-- GitHub Pages
-- Netlify
-- Vercel
-- Autre : _[À préciser]_
+Création d'un compte Netlify et relier a github
+Choix du portfolio dans les repo git 
+configuration des infos et déploiement
 
 ## 🔗 Liens
 
-- **Portfolio** : [URL à venir]
+- **Portfolio** : [URL](https://ugo-preiswerk.netlify.app/)
 - **GitHub** : [github.com/votre-username](https://github.com/votre-username)
 - **LinkedIn** : [linkedin.com/in/votre-profil](https://linkedin.com/in/votre-profil)
 
